@@ -4,9 +4,8 @@
   "description": "School management system is created for MERN 2nd Project it contains many thing in one like react js node js express js mongodb react-redux antdesign react-router-dom morgan nodemon add preloading functionality and jsonwebtoken which secure our projects from threats",
   "main": "Server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "server": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
