@@ -21,7 +21,7 @@ const app = express();
 // midleware
 app.use(
   cors({
-    origin: "http://localhost:3000, https://dershane-frontend.vercel.app",
+    origin: "https://dershane-frontend.vercel.app",
   })
 );
 app.use(express.json());
