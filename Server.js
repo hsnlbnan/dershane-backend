@@ -34,7 +34,7 @@ app.use("/api/v1/reports", require("./routes/reportsRoutes"));
 
 //listening
 
-const port = process.env.PORT || 8080;
+const port = 5000;
 
 app.listen(port, () => {
   console.log(`Server Running at ${port}`.bgYellow.red);
