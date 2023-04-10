@@ -21,7 +21,7 @@ const app = express();
 // midleware
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "http://localhost:3000, https://dershane-frontend.vercel.app",
   })
 );
 app.use(express.json());
@@ -34,7 +34,7 @@ app.use("/api/v1/reports", require("./routes/reportsRoutes"));
 
 //listening
 
-const port = 5000;
+const port = 5005;
 
 app.listen(port, () => {
   console.log(`Server Running at ${port}`.bgYellow.red);
