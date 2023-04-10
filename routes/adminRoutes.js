@@ -8,7 +8,6 @@ const {
   DeleteStdProfileController,
   getStudentInfoController,
   getUpdateProfileController,
-  TeacherRegisterController,
   adminLogoutController,
   createClassController,
   getClassesController,
@@ -48,12 +47,6 @@ router.post("/getStudentInfo", authMiddleware, getStudentInfoController);
 // update profile
 router.post("/updateProfile", authMiddleware, getUpdateProfileController);
 
-// Teacher routes
-router.post("/setTeacherdata", authMiddleware, TeacherRegisterController);
-
-// updateClassController,
-//   deleteClassController,
-//   getAllClassesController,
 router.post("/create-class", authMiddleware, createClassController);
 router.post("/update-class", authMiddleware, updateClassController);
 router.post("/delete-class", authMiddleware, deleteClassController);
