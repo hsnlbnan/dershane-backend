@@ -7,7 +7,7 @@ const authMiddleware = require("../midlewares/authMiddleware");
 
 const router = express.Router();
 
-router.get("/report", reportInstallementForMonth);
-router.get("/upcoming", getUpcomingToThreeStudent);
+router.get("/report", authMiddleware, reportInstallementForMonth);
+router.get("/upcoming", authMiddleware, getUpcomingToThreeStudent);
 
 module.exports = router;
