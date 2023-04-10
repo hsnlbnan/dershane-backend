@@ -34,7 +34,7 @@ app.use("/api/v1/reports", require("./routes/reportsRoutes"));
 
 //listening
 
-const port = 5005;
+const port = 5000;
 
 app.listen(port, () => {
   console.log(`Server Running at ${port}`.bgYellow.red);
